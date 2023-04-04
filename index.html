@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tax Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tax Calculator</h1>
+  <div id="notice">This calculator is for self-employed income that falls under the activity table in Article 151 of the CIRS (Portugal).</div>
+  <div class="form">
+    <div class="input-group">
+      <label for="in_gross-yearly">Gross Yearly (€)</label>
+      <input id="in_gross-yearly" type="number" step="1" min="0">
+    </div>
+    <div class="input-group">
+      <label for="in_net-monthly">Net Monthly (€)</label>
+      <input id="in_net-monthly" type="number" step="1" min="0">
+    </div>
+    <button id="calculate">Calculate</button>
+  </div>
+  <div id="results">
+    <div class="result">
+      <div class="label">IRS Rate</div>
+      <div class="value"></div>
+    </div>
+    <div class="result">
+      <div class="label">Total Tax Rate</div>
+      <div class="value"></div>
+    </div>
+    <div class="result">
+      <div class="label">Taxes Yearly</div>
+      <div class="value"></div>
+    </div>
+    <div class="result">
+      <div class="label">Gross Yearly</div>
+      <div class="value"></div>
+    </div>
+    <div class="result">
+      <div class="label">Gross Monthly</div>
+      <div class="value"></div>
+    </div>
+    <div class="result">
+      <div class="label">Net Yearly</div>
+      <div class="value"></div>
+    </div>
+    <div class="result">
+      <div class="label">Net Monthly</div>
+      <div class="value"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
